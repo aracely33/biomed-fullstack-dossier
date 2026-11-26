@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { dossierContent } from "./data/dossierContent";
+import { HowIWork } from "./components/sections/HowIWork";
 import { HeroContact } from "./components/sections/HeroContact";
 import type { Language } from "./types/dossier";
 
@@ -27,6 +28,7 @@ function App() {
 
       <main>
         <HeroContact data={content.hero} />
+        <HowIWork data={content.howIWork} />
       </main>
     </div>
   );
